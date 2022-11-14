@@ -1,0 +1,20 @@
+{% include 'santechnic/settings.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'santechnic/header.css' %}">
+<header>
+    <div class="container">
+        <a href="{% url 'santechnic:category' %}" class="logo">
+            <img src="{% static 'santechnic/Безымянный.png' %}" width="100" height="100" />
+        </a>
+        <a href="{% url 'santechnic:category' %}" class="name">
+            <h>Santechnic</h>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="{% url 'santechnic:category' %}">Main</a></li>
+                <li><a href="{% url 'santechnic:about_us' %}">About us</a></li>
+                <li><a href="{% url 'santechnic:contacts' %}">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

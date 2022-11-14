@@ -1,0 +1,20 @@
+{% include 'santechnic\settings.html' %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'santechnic/home.css' %}">
+{% include 'santechnic\header.html' %}
+<div class = "categories">
+{% if category_list %}
+    {% for category in category_list %}
+        <a href="{% url 'santechnic:products' category.category_name %}" class="category">
+            <div class="category_image">
+                <img src="{{ category.category_image.url }}"/>
+            </div>
+            <div class="category_name">
+              <h>{{ category.category_name }}</h>
+            </div>
+        </a>
+    {% endfor %}
+{% endif %}
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@import url('initial.css');
+
+.products {
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    top: 30px;
+    left: 100px;
+}
+.product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    border: 2px solid black;
+    margin: 1px;
+    width: 200px;
+    height: 270px;
+}
+.product_image{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.product_image img {
+    max-width: 100%; /* Максимальная ширина картинки */
+    min-height: 100%; /* Минимальная высота картинки */
+    object-fit: fill; /* Всю, выше указанную, облась заполнить картинкой */
+}
+.product_name {
+    position: relative;
+    font-family: system-ui;
+    font-weight: normal;
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.product_price {
+    position: relative;
+    margin-top: 10px;
+    font-family: system-ui;
+    font-weight: normal;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+}
+a {
+    color:black;
+}
+

@@ -1,0 +1,14 @@
+@import url('initial.css');
+
+.contacts{
+    display: block;
+    width: 80%;
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-right: 200px;
+    font-family: system-ui;
+}
+.contacts a {
+    color: black;
+    font-family: system-ui;
+}
